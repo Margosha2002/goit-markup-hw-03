@@ -43,25 +43,31 @@ button {
 }
 
 .container {
-  max-width: 1128px;
+  max-width: 1158px;
+  padding: 0 15px;
   margin: 0 auto;
+}
+
+.section {
+  padding-top: 120px;
+  padding-bottom: 120px;
 }
 
 .title {
   font-size: 36px;
   font-weight: 700;
   line-height: calc(40 / 36);
-  margin: 0 auto 72px;
-  width: fit-content;
+  margin-bottom: 72px;
+  text-align: center;
 }
 
 .header {
+  padding: 24px 0;
   border-bottom: 1px solid #e7e9fc;
 }
 
 .header .container {
   display: flex;
-  padding: 24px 0;
   align-items: center;
   justify-content: space-between;
 }
@@ -77,6 +83,7 @@ button {
   line-height: calc(21 / 18);
   margin-right: 76px;
   display: block;
+  text-transform: uppercase;
 }
 
 .logo-accent {
@@ -133,8 +140,7 @@ button {
 
 .hero {
   background-color: var(--main-text-color);
-  padding: 188px 472px;
-  margin-bottom: 120px;
+  padding: 188px 0;
 }
 
 .hero-title {
@@ -143,6 +149,8 @@ button {
   font-size: 56px;
   line-height: calc(60 / 56);
   margin-bottom: 48px;
+  max-width: 496px;
+  margin: 0 auto 48px;
 }
 
 .hero-button {
@@ -162,10 +170,6 @@ button {
 .hero-button:hover,
 .hero-button:focus {
   background-color: var(--main-active-color);
-}
-
-.advantages {
-  margin-bottom: 120px;
 }
 
 .advantages-title {
@@ -195,12 +199,12 @@ button {
 }
 
 .job {
-  margin-bottom: 120px;
+  padding-top: 0;
 }
 
 .job-list {
   display: flex;
-  justify-content: space-between;
+  column-gap: 24px;
 }
 
 .job-list li {
@@ -215,7 +219,6 @@ button {
 
 .team {
   background-color: var(--secondary-bg-color);
-  padding: 120px 0;
 }
 
 .team-list {
@@ -226,24 +229,25 @@ button {
 .team-list li {
   box-shadow: 0px 1px 6px 0px #2e2f4214;
   background-color: var(--inverted-text-color);
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 .team-list img {
   width: 264px;
   height: 260px;
   display: block;
-  margin-bottom: 32px;
+}
+
+.team-content {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .team-list h3 {
   font-size: 20px;
   font-weight: 500;
   line-height: calc(24 / 20);
+  text-align: center;
+  margin-bottom: 8px;
 }
 
 .team-list p {
@@ -251,11 +255,12 @@ button {
   font-size: 16px;
   font-weight: 400;
   line-height: calc(24 / 16);
+  text-align: center;
 }
 
 .footer {
   background-color: var(--main-text-color);
-  padding: 100px 156px;
+  padding: 100px 0;
 }
 
 .footer .logo {
@@ -279,8 +284,8 @@ button {
 
 .filters {
   display: flex;
-  width: fit-content;
-  margin: 0 auto 72px;
+  justify-content: center;
+  margin-bottom: 72px;
 }
 
 .filters li:not(:last-child) {
